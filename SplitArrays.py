@@ -1,0 +1,18 @@
+foo = 400
+import random
+
+
+a = []
+
+for i in range(2):
+    a.append(random.randint(1,10))
+print(a)
+
+half = int(len(a)/2)
+end = half*2
+print(half)
+print(end)
+
+b = a[:half]
+c = a[half:end]
+print(b,c)
