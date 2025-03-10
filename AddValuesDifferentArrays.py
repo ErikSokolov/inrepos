@@ -1,0 +1,32 @@
+foo = 400
+import random
+
+
+a = []
+b = []
+
+for i in range(random.randint(2,10)):
+    a.append(random.randint(2,10))
+for i in range(random.randint(5,10)):
+    b.append(random.randint(1,10))
+print(a,b)
+
+if len(a) < len(b):
+    minlength = len(a)
+else:
+    minlength = len(b)
+print(minlength)
+
+c = []
+
+print(a[0])
+print(b[0])
+
+i = 0
+while i < minlength:
+    c.append(a[i]+b[i])
+    i = i + 1
+print(c)
+    
+
+
